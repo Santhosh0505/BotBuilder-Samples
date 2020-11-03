@@ -56,7 +56,13 @@
 > Structured template definition.
 # BotOverview
 [Activity
-    Text = Hello, I'm the core bot. How can I be of help today? 
+    Text = Hello, I'm the Core bot. Some of my features include LanguageGeneration, LUIS, and AdaptiveDialogs. By default, I will run using a Regex generator. To enable LUIS, add 'LuisAppId', 'LuisAPIKey' and 'LuisAPIHostName' to the appsettings.json file.
+    SuggestedActions = Book flight | Help | Cancel
+]
+
+# DisplayHelp
+[Activity
+    Text = This is the help desk. Help information goes here.
     SuggestedActions = Book flight | Help | Cancel
 ]
 
@@ -80,7 +86,7 @@
 ]
 
 # Date.Invalid
-- Sorry '${this.value}' does not work. I'm looking for a full date including date, month and year.
+- I'm sorry, to make your booking please enter a full travel date including day, month and year.
 
 # AdaptiveCard.Definition
 - ${fromFile('./welcomecard.json')}
