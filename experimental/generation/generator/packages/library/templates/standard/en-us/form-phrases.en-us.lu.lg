@@ -1,7 +1,7 @@
 [standard.en-us.lg](standard.en-us.lg)
 
 # filename
-- ${locale}/form/${prefix}-form-phrases.en-us.lu
+- ${understandingDir()}${locale}/form/${prefix}-form-phrases.en-us.lu
 
 # template
 -```
@@ -23,4 +23,10 @@
 
 @ phraselist ChangePhrases(interchangeable)=
     - change, edit
+
+@ phraselist SkipPhrases(interchangeable)=
+    - skip, not now, later, neither, none of those, I don't care, nothing
+
+@ phraselist CancelPhrases(interchangeable)=
+    - cancel, forget it, quit
 ```

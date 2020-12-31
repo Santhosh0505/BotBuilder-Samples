@@ -32,7 +32,7 @@ This sample **requires** prerequisites in order to run.
     ```
     - Install bf orchestrator
     ```bash
-    > bf plugins:install @microsoft/bf-orchestrator-cli@beta
+    > bf plugins:install @microsoft/bf-orchestrator-cli
     ```
        If you have previously installed bf orchestrator plugin, uninstall that version and then run the install command again.
     
@@ -61,7 +61,7 @@ This sample **requires** prerequisites in order to run.
 - Configure the LUIS applications (HomeAutomation and Weather) required for this sample.
     - Get your [LUIS authoring key](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-concept-keys)
     ```bash
-    > bf luis:build --in CognitiveModels --authoringKey <YOUR-KEY>
+    > bf luis:build --in CognitiveModels --authoringKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
     ```
     - Update application settings in `./appsettings.json`
     
